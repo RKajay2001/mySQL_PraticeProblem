@@ -1,0 +1,8 @@
+Numeric Functions
+
+
+SELECT ABS(-10) AS absolute_value;
+SELECT ROUND(salary, 2) AS rounded_salary FROM employees;
+SELECT CEIL(salary) AS ceil_salary FROM employees;
+SELECT FLOOR(salary) AS floor_salary FROM employees;
+

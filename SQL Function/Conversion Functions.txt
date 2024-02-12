@@ -1,0 +1,7 @@
+
+----------------------Conversion Functions------------------
+
+
+SELECT CAST(salary AS VARCHAR) AS salary_string FROM employees;
+SELECT CONVERT(VARCHAR, salary) AS salary_string FROM employees;
+SELECT TO_CHAR(salary) AS salary_string FROM employees;
