@@ -1,0 +1,15 @@
+DDL (Data Definition Language)
+
+
+CREATE TABLE employees (
+    id INT PRIMARY KEY,
+    name VARCHAR(50),
+    age INT
+);
+
+ALTER TABLE employees
+ADD COLUMN salary DECIMAL(10, 2);
+
+DROP TABLE employees;
+
+TRUNCATE TABLE employee;
