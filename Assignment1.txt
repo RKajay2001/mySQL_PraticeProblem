@@ -1,0 +1,26 @@
+CREATE DATABASE empolyee;
+create TABLE employees(
+	emp_id integer,
+    emp_name varchar(15),
+    job_name varchar(10),
+    manager_id integer,
+    hire_date date,
+    salary decimal(10,2),
+    commission decimal(7,2),
+    dep_id integer
+);
+
+SELECT * FROM employees;
+SELECT salary FROM employees;
+ALTER TABLE employees
+ADD branch varchar(20);
+ALTER TABLE employees
+CHANGE job_name designation varchar(20);
+ALTER TABLE employees
+MODIFY salary integer;
+-- ALTER TABLE employees
+-- MODIFY employees.manager_id integer CONSTRAINT foreign key  ;
+ALTER TABLE employees
+DROP COLUMN manager_id;
+ALTER TABLE employees
+ADD dept_id integer after dep_id;
